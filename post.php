@@ -10,7 +10,7 @@ include 'sidebars.php';
     .main{
         margin-left: 200px;
         margin-top: 100px;
-        /* mb */
+        margin-bottom: 50px;
     }
 </style>
 
