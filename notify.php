@@ -43,6 +43,7 @@
         color: #aaa;
         font-size: 12px;
     }
+    
 </style>
 <div onclick="toggleNotifi();">
 <span>Notification</span>
