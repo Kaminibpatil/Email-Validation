@@ -2,7 +2,7 @@
   footer{
     width: 100%;
     background-color: rgb(230 235 238);
-    height: 40px;
+    height: 25px;
     z-index: 1000;
     bottom: 0;
     left: 0;
@@ -10,7 +10,7 @@
   }
 </style>
 <footer>
-  <div class="text-center p-3" style="font-weight:600;">
+  <div class="text-center pt-1" style="font-weight:500;">
    Shiksha Sangam developed by web & IT version 1.0
   </div>
 </footer>

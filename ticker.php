@@ -9,4 +9,9 @@
         }
     </style>
 <marquee behavior="" direction="" class="ticker">Ticker Text: Designed by KBP</marquee>    
-
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <marquee behavior="" direction="" class="ticker">Ticker Text: Designed by KBP</marquee>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>

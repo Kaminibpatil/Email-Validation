@@ -41,13 +41,13 @@
 
     a.sidebar-link:hover {
         background-color: rgba(255, 255, 255, .075);
-        border-left: 3px solid #3b7ddd;
     }
 
     a.sidebar-link:focus {
         background-color: rgba(255, 255, 255, .095);
-        border: 1px solid #fff;
-        margin: 5px;
+        border-left: 3px solid #3b7ddd;
+        border-right: 3px solid #3b7ddd;
+
     }
 
     .sidebar-link[data-bs-toggle="collapse"]::after {
@@ -65,11 +65,9 @@
 
     .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
         transform: translateY(-50%) rotate(45deg);
-        /* Centered the icon vertically */
         transition: all .2s ease-out;
     }
 </style>
-<!-- <div class="wrapper"> -->
 <aside id="sidebar">
     <ul class="sidebar-nav">
         <li class="sidebar-item">

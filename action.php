@@ -99,7 +99,7 @@ if (isset($_POST['action']) && $_POST['action'] == 'login') {
         }
 
         if($user['email_status']==0){
-            echo 'Please verify your email ID <a href="verify_email.php?email=' . $email .'">Verify Now</a>';
+            echo 'Check your email to verify OTP.<br><a href="verify_email.php?email=' . $email .'">Verify Now</a>';
 
             exit();
         }

@@ -2,6 +2,9 @@ $(document).ready(function () {
   $("#logoutlink").click(function () {
     $("#logoutmodal").modal("show");
   });
+  $("#notify").click(function(){
+    $("#notifybox").modal("show");
+  });
   $(".login").click(function () {
     $("#login-box").show();
     $("#signup-box").hide();
@@ -93,3 +96,21 @@ $(document).ready(function () {
     return true;
   });
 });
+
+  //notification toggle
+  var notifi_box=document.getElementById("notifi_box");
+  var down=false;
+  
+  function toggleNotifi(){
+      if(down){
+          notifi_box.style.height='0px';
+          notifi_box.style.opacity=0;
+          down=false;
+      }else{
+          notifi_box.style.height='500px';
+          notifi_box.style.opacity=1;
+          down=true;
+      }
+  }
+  
+
