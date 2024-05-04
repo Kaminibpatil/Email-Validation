@@ -6,11 +6,11 @@
         justify-content: space-between;
         align-items: center;
         padding: 10px;
-        height: 100px;
+        height: 70px;
         position:fixed;
         top: 0;
         left: 0;
-        z-index: 1000;
+        z-index: 9999;
     }
 
     nav ul li{
@@ -21,7 +21,7 @@
     }
 
     .navbar-nav .icon {
-        font-size: 30px;
+        font-size: 25px;
         padding: 10px;
     }
 
@@ -29,6 +29,11 @@
         color: #eb5406;
     }
     
+.icon {
+    font-size: 30px;
+    color: black;
+}
+
 </style>
 
 
@@ -55,11 +60,8 @@
     </div>
 </nav>
 
-
-
-
 <div class="modal fade" id="logoutmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
                 <h3 class="modal-title" id="exampleModalLabel">Are you sure ?</h3>

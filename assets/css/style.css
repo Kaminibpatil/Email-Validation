@@ -7,6 +7,9 @@
     padding: 0;
 }
 
+.container-fluid{
+    overflow: auto;
+}
 * {
     text-decoration: none;
     box-sizing: border-box;
@@ -83,10 +86,6 @@ a:hover {
     display: none;
 }
 
-.icon {
-    font-size: 30px;
-    color: black;
-}
 /* 
 .main {
     display: flex;

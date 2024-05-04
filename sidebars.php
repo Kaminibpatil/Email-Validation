@@ -4,7 +4,7 @@
     }
 
     #sidebar {
-        margin-top: 100px;
+        top: 70px;
         left: 0px;
         width: 200px;
         position: fixed;
@@ -16,6 +16,10 @@
         position: fixed;
         flex-direction: column;
 
+    }
+
+    .sidebar-nav {
+        padding-top: 10px;
     }
 
     .sidebar-link i {
@@ -55,107 +59,106 @@
         position: absolute;
         right: 2.5rem;
         top: 50%;
-        transform: translateY(-50%) rotate(-135deg); 
+        transform: translateY(-50%) rotate(-135deg);
         transition: all .2s ease-out;
     }
 
     .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
-        transform: translateY(-50%) rotate(45deg); /* Centered the icon vertically */
+        transform: translateY(-50%) rotate(45deg);
+        /* Centered the icon vertically */
         transition: all .2s ease-out;
     }
 </style>
-<div class="wrapper">
-    <aside id="sidebar">
-        <ul class="sidebar-nav">
-            <li class="sidebar-item">
-                <a href="#" class="sidebar-link" data-bs-toggle="collapse" data-bs-target="#profile" aria-expanded="false" aria-controls="profile">
-                    <i class='fas fa-user-alt'></i>
-                    <span>User Profile</span>
-                </a>
-                <ul id="profile" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Edit Profile </a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Manage Posts</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="sidebar-item">
-                <a href="#" class="sidebar-link" data-bs-toggle="collapse" data-bs-target="#program" aria-expanded="false" aria-controls="program">
-                    <i class="fas fa-calendar"></i>
-                    <span>Programs</span>
-                </a>
-                <ul id="program" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Upcoming Events </a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Past Events</a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Workshop</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span>Study & Research</span>
-                </a>
-            </li>
-            <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
-                    <i class="fas fa-pencil-alt"></i>
-                    <span>Post</span>
-                </a>
-            </li>
-            <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
-                    <i class="fas fa-newspaper"></i>
-                    <span>News & Updates</span>
-                </a>
-            </li>
-            <li class="sidebar-item">
-                <a href="#" class="sidebar-link" data-bs-toggle="collapse" data-bs-target="#network" aria-expanded="false" aria-controls="network">
-                    <i class="fas fa-network-wired"></i>
-                    <span>My Networks</span>
-                </a>
-                <ul id="network" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Connected</a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Recommended</a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Invitation</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
-                    <i class="fas fa-hands-helping"></i>
-                    <span>Donors</span>
-                </a>
-            </li>
-            <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
-                    <i class="fas fa-comments"></i>
-                    <span>Chat</span>
-                </a>
-            </li>
-            <li class="sidebar-item">
-                <a href="#" class="sidebar-link" data-bs-toggle="collapse" data-bs-target="#notify" aria-expanded="false" aria-controls="notify">
-                    <i class="fas fa-bell"></i> <span>Notifications</span>
-                </a>
-                <ul id="notify" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Notifications Setting</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </aside>
-   
-</div>
+<!-- <div class="wrapper"> -->
+<aside id="sidebar">
+    <ul class="sidebar-nav">
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-link" data-bs-toggle="collapse" data-bs-target="#profile" aria-expanded="false" aria-controls="profile">
+                <i class='fas fa-user-alt'></i>
+                <span>User Profile</span>
+            </a>
+            <ul id="profile" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">Edit Profile </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">Manage Posts</a>
+                </li>
+            </ul>
+        </li>
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-link" data-bs-toggle="collapse" data-bs-target="#program" aria-expanded="false" aria-controls="program">
+                <i class="fas fa-calendar"></i>
+                <span>Programs</span>
+            </a>
+            <ul id="program" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">Upcoming Events </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">Past Events</a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">Workshop</a>
+                </li>
+            </ul>
+        </li>
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Study & Research</span>
+            </a>
+        </li>
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+                <i class="fas fa-pencil-alt"></i>
+                <span>Post</span>
+            </a>
+        </li>
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+                <i class="fas fa-newspaper"></i>
+                <span>News & Updates</span>
+            </a>
+        </li>
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-link" data-bs-toggle="collapse" data-bs-target="#network" aria-expanded="false" aria-controls="network">
+                <i class="fas fa-network-wired"></i>
+                <span>My Networks</span>
+            </a>
+            <ul id="network" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">Connected</a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">Recommended</a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">Invitation</a>
+                </li>
+            </ul>
+        </li>
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+                <i class="fas fa-hands-helping"></i>
+                <span>Donors</span>
+            </a>
+        </li>
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+                <i class="fas fa-comments"></i>
+                <span>Chat</span>
+            </a>
+        </li>
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-link" data-bs-toggle="collapse" data-bs-target="#notify" aria-expanded="false" aria-controls="notify">
+                <i class="fas fa-bell"></i> <span>Notifications</span>
+            </a>
+            <ul id="notify" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">Notifications Setting</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</aside>

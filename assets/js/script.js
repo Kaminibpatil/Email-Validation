@@ -93,7 +93,3 @@ $(document).ready(function () {
     return true;
   });
 });
-const sider = document.querySelector("#toggle-btn");
-sider.addEventListener("click", function () {
-  document.querySelector("#sidebar").classList.toggle("expand");
-});
