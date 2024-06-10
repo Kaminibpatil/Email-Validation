@@ -16,20 +16,20 @@ $mail = new PHPMailer(true);
         $mail->isSMTP();                                            //Send using SMTP
         $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-        $mail->Username   = 'kbpatil370922@kkwagh.edu.in';                     //SMTP username
-        $mail->Password   = 'kbpatil370922@kkwagh';                               //SMTP password
+        $mail->Username   = 'Your email address';                     //SMTP username
+        $mail->Password   = 'email password';                                               //SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
         $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
     
         //Recipients
-        $mail->setFrom('kbpatil370922@kkwagh.edu.in', 'Shiksha Sangam');
+        $mail->setFrom('your email address', 'Shiksha Sangam');
         $mail->addAddress($femail);               //Name is optional
     
     
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
         $mail->Subject = 'Reset Password';
-        $mail->Body    = '<h3> Click on below link to reset your password.</h3><br> <a href="http://localhost/shiksha_sangam/reset_password.php?email=?$femail&$token=$token"> click here</a><br> <h3> Regards <br> Shiksha Sangam</h3>';
+        $mail->Body    = '<h3> Click on below link to reset your password.</h3><br> <a href="link for reset password"> click here</a><br> <h3> Regards <br> Shiksha Sangam</h3>';
 
         if($mail->send()){
             echo "We have send you the reset link in your email Id, Please check your email.";
