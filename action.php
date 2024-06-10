@@ -47,20 +47,19 @@ if (isset($_POST['action']) && $_POST['action'] == 'signup') {
                 $mail->isSMTP();                                            //Send using SMTP
                 $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
                 $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-                $mail->Username   = 'kbpatil370922@kkwagh.edu.in';                     //SMTP username
-                $mail->Password   = 'kbpatil370922@kkwagh';                               //SMTP password
+                $mail->Username   = 'your email address';                     //SMTP username
+                $mail->Password   = 'email password';                               //SMTP password
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
                 $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
         
                 //Recipients
-                $mail->setFrom('kbpatil370922@kkwagh.edu.in', 'Shiksha Sangam');
+                $mail->setFrom('your email address', 'Shiksha Sangam');
                 $mail->addAddress($email);               //Name is optional
 
                 $mail->isHTML(true);                                  //Set email format to HTML
                 $mail->Subject = 'Verify Email';
                 $mail->Body =  "Your OTP for email verification is:<strong>".$otp."</strong>";
 
-                // $headers = "From:kbpatil370922@kkwagh.edu.in";
                 if ($mail->send()) {
                     echo 'Sign up successfully, Please verify your email ID <a href="verify_email.php?email=' . $email .'">Verify Now</a>';
                 } else {
@@ -139,13 +138,13 @@ if (isset($_POST['action']) && $_POST['action'] == 'forgot') {
         $mail->isSMTP();                                            //Send using SMTP
         $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-        $mail->Username   = 'kbpatil370922@kkwagh.edu.in';                     //SMTP username
-        $mail->Password   = 'kbpatil370922@kkwagh';                               //SMTP password
+        $mail->Username   = 'your email address';                     //SMTP username
+        $mail->Password   = 'email password';                               //SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
         $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
         //Recipients
-        $mail->setFrom('kbpatil370922@kkwagh.edu.in', 'Shiksha Sangam');
+        $mail->setFrom('email address', 'Shiksha Sangam');
         $mail->addAddress($femail);               //Name is optional
 
         //Content
